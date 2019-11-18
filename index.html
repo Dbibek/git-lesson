@@ -3,6 +3,12 @@
 <head>
 
     <title>Introduction to Html</title>
+    <ul>
+        <div class="header_item" id="item-one">1</div>
+        <div class="header_item" id="item-two">2</div>
+        <div class="header_item" id="item-three">3</div>
+    </ul>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
 </head>
 <body>
@@ -57,97 +63,101 @@
                 </ol>
             </ul>
         </section>
-        <fieldset>
-            <legend>Application form</legend>
+        <section>
+                <fieldset>
+                        <legend>Application form</legend>
+                        
+                    <form method="POST">
+                            <div>
+                                    <label for="firstname">First Name:</label>
+                                    <input id="firstname" name="firstname" type="text" required/>
+                            </div>
+                            <div>
+                                    <label for="Lastname">Last Name:</label>
+                                    <input id="lastname" name="larstname" type="text" required/>
+                            </div>
+                            <div>
+                                    <label for="dateofbirth">Date of Birth:</label>
+                                    <input id="dateofbirth" name="dateofbirth" type="date"required/>
+                            </div>
+                            
+                            <div>
+                                    <label for="email">Email:</label>
+                                    <input id="email" name="email" type="email"/>
+                            </div>
+                            <div>
+                                <p>Select your skills</p>
+                                <input type="checkbox" id="html" name="html"required />
+                            <label for="html">HTML</label>
+                                <br/>
+                            <input type="checkbox" id="css" name="css"/>
+                            <label for="css">CSS</label>
+                                <br/>
+                            <input type="checkbox" id="js" name="js"/>
+                            <label for="js">JavaScript</label>
+                                <br/>
+                            <input type="checkbox" id="React" name="React"/>
+                            <label for="React">React</label>
+                                <br/>
+                            <input type="checkbox" id="Redux" name="Redux"/>
+                            <label for="Redux">Redux</label>
+                            </div>
+                            <br/>
+                            <p>Gender</p>
+                            <div>
+                            <input type="radio" id="female" name="gender"/>
+                            <label for="female"> Female</label>
+                            </div>
+                            <div>
+                            <input type="radio" id="male" name="gender"/>
+                            <label for="male"> Male</label>
+                            </div>
+                            <div>
+                            <input type="radio" id="other" name="gender"/>
+                            <label for="other"> Other</label>
+                            <div>
+                                <label for="Linkedin">Linkedin</label>
+                                <input type="url" id="Linkedin" name="Linkedin">
+                            </div>
+                            <div>
+                                    <label for="github">Git Hub</label>
+                                    <input type="url" id="github" name="github">
+                                </div>
             
-        <form method="POST">
-                <div>
-                        <label for="firstname">First Name:</label>
-                        <input id="firstname" name="firstname" type="text" required/>
-                </div>
-                <div>
-                        <label for="Lastname">Last Name:</label>
-                        <input id="lastname" name="larstname" type="text" required/>
-                </div>
-                <div>
-                        <label for="dateofbirth">Date of Birth:</label>
-                        <input id="dateofbirth" name="dateofbirth" type="date"required/>
-                </div>
-                
-                <div>
-                        <label for="email">Email:</label>
-                        <input id="email" name="email" type="email"/>
-                </div>
-                <div>
-                    <p>Select your skills</p>
-                    <input type="checkbox" id="html" name="html"required />
-                <label for="html">HTML</label>
-                    <br/>
-                <input type="checkbox" id="css" name="css"/>
-                <label for="css">CSS</label>
-                    <br/>
-                <input type="checkbox" id="js" name="js"/>
-                <label for="js">JavaScript</label>
-                    <br/>
-                <input type="checkbox" id="React" name="React"/>
-                <label for="React">React</label>
-                    <br/>
-                <input type="checkbox" id="Redux" name="Redux"/>
-                <label for="Redux">Redux</label>
-                </div>
-                <br/>
-                <p>Gender</p>
-                <div>
-                <input type="radio" id="female" name="gender"/>
-                <label for="female"> Female</label>
-                </div>
-                <div>
-                <input type="radio" id="male" name="gender"/>
-                <label for="male"> Male</label>
-                </div>
-                <div>
-                <input type="radio" id="other" name="gender"/>
-                <label for="other"> Other</label>
-                <div>
-                    <label for="Linkedin">Linkedin</label>
-                    <input type="url" id="Linkedin" name="Linkedin">
-                </div>
-                <div>
-                        <label for="github">Git Hub</label>
-                        <input type="url" id="github" name="github">
-                    </div>
+                             </div>
+                             <div>
+                             <select>
+                                 
+                                 <option>--Country--</option>                     
+                                 <option>Finland</option>
+                                 <option>Estonia</option>
+                                 <option>Sweden</option>
+                                 <option>Norway</option>
+                             </select>
+                            </div>
+                            <div>
+                                <label for="motivation">Motivation</label>
+                                <textarea id="motivation" 
+                                name="motivation" 
+                                placeholder="write what motivates you" cols=80 rows=5></textarea>
+                    
+                            </div>
+                            <div>
+                                <label>Attach your Cv</label>
+                                <input type="file"/>
+                            </div>
+            
+                             <div>
+                                 <input type="submit" value="submit"/>
+                             </div>
+                            
+                    </form>
+            
+                    </fieldset>
+            
 
-                 </div>
-                 <div>
-                 <select>
-                     
-                     <option>--Country--</option>                     
-                     <option>Finland</option>
-                     <option>Estonia</option>
-                     <option>Sweden</option>
-                     <option>Norway</option>
-                 </select>
-                </div>
-                <div>
-                    <label for="motivation">Motivation</label>
-                    <textarea id="motivation" 
-                    name="motivation" 
-                    placeholder="write what motivates you" cols=80 rows=5></textarea>
+        </section>
         
-                </div>
-                <div>
-                    <label>Attach your Cv</label>
-                    <input type="file"/>
-                </div>
-
-                 <div>
-                     <input type="submit" value="submit"/>
-                 </div>
-                
-        </form>
-
-        </fieldset>
-
     
     </main>
     <footer>
